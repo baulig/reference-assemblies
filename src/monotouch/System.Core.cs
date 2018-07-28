@@ -2905,6 +2905,8 @@ namespace System.Security.Cryptography
         public static System.Security.Cryptography.IncrementalHash CreateHMAC(System.Security.Cryptography.HashAlgorithmName hashAlgorithm, byte[] key) { throw null; }
         public void Dispose() { }
         public byte[] GetHashAndReset() { throw null; }
+        public void AppendData(System.ReadOnlySpan<byte> data) { }
+        public bool TryGetHashAndReset(System.Span<byte> destination, out int bytesWritten) { throw null; }
     }
     public sealed partial class RSACng : System.Security.Cryptography.RSA
     {
